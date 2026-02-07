@@ -9,7 +9,7 @@
 <body>
     <div class="top-banner">
         <svg class="copilot-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z" fill="currentColor" opacity=".3"/><path d="M9.5 8.5C9.5 7.67 10.17 7 11 7h2c.83 0 1.5.67 1.5 1.5v1c0 .83-.67 1.5-1.5 1.5h-2c-.83 0-1.5-.67-1.5-1.5v-1z" fill="currentColor"/><path d="M7 13.5C7 12.67 7.67 12 8.5 12h7c.83 0 1.5.67 1.5 1.5v2c0 .83-.67 1.5-1.5 1.5h-7c-.83 0-1.5-.67-1.5-1.5v-2z" fill="currentColor"/><circle cx="9.5" cy="14.5" r="1" fill="var(--bg-top)"/><circle cx="14.5" cy="14.5" r="1" fill="var(--bg-top)"/></svg>
-        <span>Built with <strong>GitHub Copilot</strong> — our main AI development tool</span>
+        <span>Built with <strong>GitHub Copilot</strong> &mdash; our main AI development tool</span>
     </div>
     <header>
         <p>LOGO</p>
@@ -22,18 +22,30 @@
         </nav>
     </header>
     <main>
+        <!-- ══ HERO ══ -->
         <section class="of-hero">
             <div class="of-hero-bg">
                 <div class="of-orb of-orb-1"></div>
                 <div class="of-orb of-orb-2"></div>
+                <div class="of-orb of-orb-3"></div>
             </div>
-            <div class="of-hero-content">
+            <div class="of-hero-particles">
+                <span class="of-particle" style="--x:12%;--y:25%;--d:7s;--del:0s"></span>
+                <span class="of-particle" style="--x:78%;--y:18%;--d:9s;--del:1.5s"></span>
+                <span class="of-particle" style="--x:55%;--y:65%;--d:6s;--del:0.8s"></span>
+                <span class="of-particle" style="--x:30%;--y:75%;--d:8s;--del:2s"></span>
+                <span class="of-particle" style="--x:85%;--y:60%;--d:5s;--del:3s"></span>
+            </div>
+            <div class="of-hero-content of-anim-up" style="--delay:0.1s">
                 <span class="ab-eyebrow">Pricing</span>
-                <h1 class="of-headline">Premium websites.<br>Honest <span class="ab-gradient-text">pricing</span>.</h1>
+                <h1 class="of-headline">Premium websites.<br>Honest <span class="of-gradient-text">pricing</span>.</h1>
                 <p class="ab-lead">No hidden fees, no surprises. Choose a package or request a custom quote &mdash; we keep everything transparent and professional.</p>
-                <a class="ab-btn-primary" href="#pricing">Explore packages &darr;</a>
+                <a class="of-hero-btn" href="#pricing">
+                    Explore packages
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 3v10M3 8l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
             </div>
-            <div class="of-hero-features">
+            <div class="of-hero-features of-anim-up" style="--delay:0.35s">
                 <div class="of-feature">
                     <span class="of-feature-icon">&#127919;</span>
                     <div>
@@ -56,17 +68,41 @@
                     </div>
                 </div>
             </div>
+            <!-- Stats bar -->
+            <div class="of-stats-bar of-anim-up" style="--delay:0.55s">
+                <div class="of-stat-item">
+                    <span class="of-stat-num">50+</span>
+                    <span class="of-stat-label">Projects</span>
+                </div>
+                <div class="of-stat-divider"></div>
+                <div class="of-stat-item">
+                    <span class="of-stat-num">100%</span>
+                    <span class="of-stat-label">Satisfaction</span>
+                </div>
+                <div class="of-stat-divider"></div>
+                <div class="of-stat-item">
+                    <span class="of-stat-num">5&ndash;14</span>
+                    <span class="of-stat-label">Days Delivery</span>
+                </div>
+                <div class="of-stat-divider"></div>
+                <div class="of-stat-item">
+                    <span class="of-stat-num">24h</span>
+                    <span class="of-stat-label">Response</span>
+                </div>
+            </div>
         </section>
 
+        <!-- ══ PRICING CARDS ══ -->
         <section class="of-pricing" id="pricing">
-            <div class="of-pricing-header">
+            <div class="of-pricing-header of-reveal">
                 <span class="ab-eyebrow">Packages</span>
-                <h2 class="ab-section-title">Choose your <span class="ab-gradient-text">plan</span></h2>
+                <h2 class="ab-section-title">Choose your <span class="of-gradient-text">plan</span></h2>
                 <p class="ab-lead" style="text-align:center;">Every package includes responsive design, SEO basics, and performance optimization.</p>
             </div>
             <div class="of-cards">
-                <article class="of-card">
+                <article class="of-card of-reveal" style="--card-delay:0s">
                     <div class="of-card-glow"></div>
+                    <div class="of-card-shine"></div>
                     <div class="of-card-inner">
                         <span class="of-card-tag">Starter</span>
                         <div class="of-price-row">
@@ -86,8 +122,9 @@
                         <a class="of-card-btn" href="#contact">Get Started</a>
                     </div>
                 </article>
-                <article class="of-card of-card-featured">
+                <article class="of-card of-card-featured of-reveal" style="--card-delay:0.15s">
                     <div class="of-card-glow"></div>
+                    <div class="of-card-shine"></div>
                     <div class="of-card-badge">Most Popular</div>
                     <div class="of-card-inner">
                         <span class="of-card-tag">Pro</span>
@@ -108,8 +145,9 @@
                         <a class="of-card-btn of-card-btn-accent" href="#contact">Choose Pro</a>
                     </div>
                 </article>
-                <article class="of-card">
+                <article class="of-card of-reveal" style="--card-delay:0.3s">
                     <div class="of-card-glow"></div>
+                    <div class="of-card-shine"></div>
                     <div class="of-card-inner">
                         <span class="of-card-tag">Custom</span>
                         <div class="of-price-row">
@@ -132,58 +170,162 @@
             </div>
         </section>
 
-        <section class="of-included">
-            <div class="of-included-header">
-                <span class="ab-eyebrow">Included in Every Plan</span>
-                <h2 class="ab-section-title">Built-in <span class="ab-gradient-text">extras</span></h2>
+        <!-- ══ HOW IT WORKS ══ -->
+        <section class="of-how">
+            <div class="of-section-header of-reveal">
+                <span class="ab-eyebrow">How It Works</span>
+                <h2 class="ab-section-title">From inquiry to <span class="of-gradient-text">launch</span></h2>
+                <p class="ab-lead" style="text-align:center;">Four simple steps to get your premium website live.</p>
             </div>
-            <div class="of-included-grid">
-                <div class="of-inc-item"><span>&#128241;</span><h4>Mobile First</h4><p>Responsive on all devices</p></div>
-                <div class="of-inc-item"><span>&#128640;</span><h4>Fast Loading</h4><p>Optimized for speed</p></div>
-                <div class="of-inc-item"><span>&#128274;</span><h4>SSL Ready</h4><p>HTTPS from day one</p></div>
-                <div class="of-inc-item"><span>&#127912;</span><h4>Clean Code</h4><p>Well-structured &amp; documented</p></div>
-                <div class="of-inc-item"><span>&#128202;</span><h4>Analytics</h4><p>Google Analytics integration</p></div>
-                <div class="of-inc-item"><span>&#128172;</span><h4>Support</h4><p>30 days post-launch help</p></div>
+            <div class="of-how-steps">
+                <div class="of-how-step of-reveal" style="--card-delay:0s">
+                    <div class="of-how-num">01</div>
+                    <div class="of-how-icon">&#128172;</div>
+                    <h3>Tell Us Your Vision</h3>
+                    <p>Describe your project, goals, and preferences. We'll listen carefully and ask the right questions.</p>
+                </div>
+                <div class="of-how-connector">
+                    <div class="of-connector-line"></div>
+                    <div class="of-connector-dot"></div>
+                </div>
+                <div class="of-how-step of-reveal" style="--card-delay:0.12s">
+                    <div class="of-how-num">02</div>
+                    <div class="of-how-icon">&#127912;</div>
+                    <h3>Get a Custom Plan</h3>
+                    <p>Within 24h we send a detailed plan with scope, timeline, and transparent pricing. No commitments yet.</p>
+                </div>
+                <div class="of-how-connector">
+                    <div class="of-connector-line"></div>
+                    <div class="of-connector-dot"></div>
+                </div>
+                <div class="of-how-step of-reveal" style="--card-delay:0.24s">
+                    <div class="of-how-num">03</div>
+                    <div class="of-how-icon">&#128187;</div>
+                    <h3>We Build &amp; Iterate</h3>
+                    <p>Design, develop, and refine. You get live previews and revision rounds to ensure it's perfect.</p>
+                </div>
+                <div class="of-how-connector">
+                    <div class="of-connector-line"></div>
+                    <div class="of-connector-dot"></div>
+                </div>
+                <div class="of-how-step of-reveal" style="--card-delay:0.36s">
+                    <div class="of-how-num">04</div>
+                    <div class="of-how-icon">&#128640;</div>
+                    <h3>Launch &amp; Support</h3>
+                    <p>We deploy your site, set up analytics, and provide 30 days of free post-launch support.</p>
+                </div>
             </div>
         </section>
 
+        <!-- ══ INCLUDED EXTRAS ══ -->
+        <section class="of-included">
+            <div class="of-included-header of-reveal">
+                <span class="ab-eyebrow">Included in Every Plan</span>
+                <h2 class="ab-section-title">Built-in <span class="of-gradient-text">extras</span></h2>
+            </div>
+            <div class="of-included-grid">
+                <div class="of-inc-item of-reveal" style="--card-delay:0s">
+                    <span>&#128241;</span><h4>Mobile First</h4><p>Responsive on all devices</p>
+                </div>
+                <div class="of-inc-item of-reveal" style="--card-delay:0.06s">
+                    <span>&#128640;</span><h4>Fast Loading</h4><p>Optimized for speed</p>
+                </div>
+                <div class="of-inc-item of-reveal" style="--card-delay:0.12s">
+                    <span>&#128274;</span><h4>SSL Ready</h4><p>HTTPS from day one</p>
+                </div>
+                <div class="of-inc-item of-reveal" style="--card-delay:0.18s">
+                    <span>&#127912;</span><h4>Clean Code</h4><p>Well-structured &amp; documented</p>
+                </div>
+                <div class="of-inc-item of-reveal" style="--card-delay:0.24s">
+                    <span>&#128202;</span><h4>Analytics</h4><p>Google Analytics integration</p>
+                </div>
+                <div class="of-inc-item of-reveal" style="--card-delay:0.3s">
+                    <span>&#128172;</span><h4>Support</h4><p>30 days post-launch help</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ══ TRUST BADGES ══ -->
+        <section class="of-trust">
+            <div class="of-section-header of-reveal">
+                <span class="ab-eyebrow">Why Us</span>
+                <h2 class="ab-section-title">Built with <span class="of-gradient-text">trust</span></h2>
+            </div>
+            <div class="of-trust-grid">
+                <div class="of-trust-item of-reveal" style="--card-delay:0s">
+                    <div class="of-trust-icon">&#127775;</div>
+                    <h4>No Hidden Fees</h4>
+                    <p>The price you see is the price you pay. Every cost is agreed upfront before we start.</p>
+                </div>
+                <div class="of-trust-item of-reveal" style="--card-delay:0.1s">
+                    <div class="of-trust-icon">&#128170;</div>
+                    <h4>Satisfaction Guarantee</h4>
+                    <p>If you're not happy with the result, we keep revising until you love it. No questions asked.</p>
+                </div>
+                <div class="of-trust-item of-reveal" style="--card-delay:0.2s">
+                    <div class="of-trust-icon">&#128272;</div>
+                    <h4>You Own Everything</h4>
+                    <p>Full ownership of code, design, and assets. No lock-in, no monthly fees, it's all yours.</p>
+                </div>
+                <div class="of-trust-item of-reveal" style="--card-delay:0.3s">
+                    <div class="of-trust-icon">&#128337;</div>
+                    <h4>On-Time Delivery</h4>
+                    <p>We set clear deadlines and stick to them. Real-time updates so you always know where things stand.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ══ FAQ ══ -->
         <section class="of-faq">
-            <div class="of-faq-header">
+            <div class="of-faq-header of-reveal">
                 <span class="ab-eyebrow">FAQ</span>
-                <h2 class="ab-section-title">Common <span class="ab-gradient-text">questions</span></h2>
+                <h2 class="ab-section-title">Common <span class="of-gradient-text">questions</span></h2>
             </div>
             <div class="of-faq-list">
-                <details class="of-faq-item">
+                <details class="of-faq-item of-reveal" style="--card-delay:0s">
                     <summary>How long does it take to build a website?</summary>
                     <p>Most projects are completed within 5&ndash;14 business days depending on complexity. We give you a clear timeline before starting.</p>
                 </details>
-                <details class="of-faq-item">
+                <details class="of-faq-item of-reveal" style="--card-delay:0.06s">
                     <summary>What do I need to provide?</summary>
                     <p>Your content (text, images, logo) and a general idea of what you want. We handle the design, coding, and optimization.</p>
                 </details>
-                <details class="of-faq-item">
+                <details class="of-faq-item of-reveal" style="--card-delay:0.12s">
                     <summary>Can I update the site myself after launch?</summary>
                     <p>Absolutely. We deliver clean, well-documented code and can set up a simple CMS if needed. We also provide a quick training session.</p>
                 </details>
-                <details class="of-faq-item">
+                <details class="of-faq-item of-reveal" style="--card-delay:0.18s">
                     <summary>Do you offer hosting and domain setup?</summary>
                     <p>We can help you choose and set up hosting and connect your domain. This is included at no extra cost.</p>
                 </details>
-                <details class="of-faq-item">
+                <details class="of-faq-item of-reveal" style="--card-delay:0.24s">
                     <summary>What if I need changes after the project is done?</summary>
                     <p>Every plan includes revision rounds. After that, we offer affordable maintenance packages for ongoing updates.</p>
+                </details>
+                <details class="of-faq-item of-reveal" style="--card-delay:0.3s">
+                    <summary>Do you work with international clients?</summary>
+                    <p>Yes! We work remotely with clients worldwide. Communication happens via email, video calls, or your preferred platform.</p>
+                </details>
+                <details class="of-faq-item of-reveal" style="--card-delay:0.36s">
+                    <summary>What technologies do you use?</summary>
+                    <p>We build with modern HTML5, CSS3, JavaScript, and frameworks like React or Next.js when needed. Always clean, fast, and future-proof code.</p>
                 </details>
             </div>
         </section>
 
+        <!-- ══ CTA ══ -->
         <section class="of-cta" id="contact">
+            <div class="of-cta-orbs">
+                <div class="of-orb of-orb-1"></div>
+                <div class="of-orb of-orb-2"></div>
+            </div>
             <div class="of-cta-glow"></div>
-            <div class="of-cta-content">
-                <h2>Not sure which plan<br>is right for <span class="ab-gradient-text">you</span>?</h2>
+            <div class="of-cta-content of-reveal">
+                <h2>Not sure which plan<br>is right for <span class="of-gradient-text">you</span>?</h2>
                 <p>Send us a message and we will recommend the perfect package for your project.</p>
-                <div class="ab-hero-actions" style="justify-content:center;">
-                    <a class="ab-btn-primary" href="#contact">Let's Talk</a>
-                    <span class="ab-reply-note">hello@hyperweb.dev</span>
+                <div class="of-cta-actions">
+                    <a class="of-btn-primary" href="#contact">Let's Talk</a>
+                    <span class="of-cta-note">hello@hyperweb.dev</span>
                 </div>
             </div>
         </section>
@@ -201,5 +343,41 @@
             <div class="footer-meta">&copy; 2026 HyperWeb. All rights reserved.</div>
         </div>
     </footer>
+    <script>
+        /* ── Scroll reveal ── */
+        const revealObs = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('of-visible');
+                    revealObs.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.of-reveal').forEach(el => revealObs.observe(el));
+
+        /* ── Parallax hero orbs on mouse move ── */
+        const hero = document.querySelector('.of-hero');
+        if (hero) {
+            hero.addEventListener('mousemove', (e) => {
+                const rect = hero.getBoundingClientRect();
+                const x = (e.clientX - rect.left) / rect.width - 0.5;
+                const y = (e.clientY - rect.top) / rect.height - 0.5;
+                hero.querySelectorAll('.of-orb').forEach((orb, i) => {
+                    const speed = (i + 1) * 15;
+                    orb.style.transform = `translate(${x * speed}px, ${y * speed}px)`;
+                });
+            });
+        }
+
+        /* ── FAQ smooth open/close ── */
+        document.querySelectorAll('.of-faq-item').forEach(item => {
+            item.addEventListener('toggle', () => {
+                if (item.open) {
+                    const p = item.querySelector('p');
+                    p.style.animation = 'of-faq-open 0.3s ease forwards';
+                }
+            });
+        });
+    </script>
 </body>
 </html>
