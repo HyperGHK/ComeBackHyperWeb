@@ -9,16 +9,19 @@
 <body>
     <div class="top-banner">
         <svg class="copilot-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z" fill="currentColor" opacity=".3"/><path d="M9.5 8.5C9.5 7.67 10.17 7 11 7h2c.83 0 1.5.67 1.5 1.5v1c0 .83-.67 1.5-1.5 1.5h-2c-.83 0-1.5-.67-1.5-1.5v-1z" fill="currentColor"/><path d="M7 13.5C7 12.67 7.67 12 8.5 12h7c.83 0 1.5.67 1.5 1.5v2c0 .83-.67 1.5-1.5 1.5h-7c-.83 0-1.5-.67-1.5-1.5v-2z" fill="currentColor"/><circle cx="9.5" cy="14.5" r="1" fill="var(--bg-top)"/><circle cx="14.5" cy="14.5" r="1" fill="var(--bg-top)"/></svg>
-        <span>Built with <strong>GitHub Copilot</strong> — our main AI development tool</span>
+        <span data-i18n="banner">Built with <strong>GitHub Copilot</strong> — our main AI development tool</span>
     </div>
     <header>
         <p>LOGO</p>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="services.html">Services</a>
-            <a href="oferta.html">Oferta</a>
-            <a href="portfolio.html">Portfolio</a>
+        <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+        <nav id="mainNav">
+            <a href="index.html" data-i18n="nav-home">Home</a>
+            <a href="about.html" data-i18n="nav-about">About Us</a>
+            <a href="services.html" data-i18n="nav-services">Services</a>
+            <a href="oferta.html" data-i18n="nav-oferta">Oferta</a>
+            <a href="portfolio.html" data-i18n="nav-portfolio">Portfolio</a>
         </nav>
     </header>
     <main>
@@ -30,29 +33,29 @@
                 <div class="ab-orb ab-orb-3"></div>
             </div>
             <div class="ab-hero-content">
-                <span class="ab-eyebrow">About HyperWeb</span>
-                <h1 class="ab-headline">We build websites<br>that feel like <span class="ab-gradient-text">the future</span></h1>
-                <p class="ab-lead">A student team from MTI with a single obsession: clean design, lightning performance, and brands that look razor-sharp online.</p>
+                <span class="ab-eyebrow" data-i18n="ab-eyebrow-hero">About HyperWeb</span>
+                <h1 class="ab-headline" data-i18n="ab-h1">We build websites<br>that feel like <span class="ab-gradient-text">the future</span></h1>
+                <p class="ab-lead" data-i18n="ab-lead-hero">A student team from MTI with a single obsession: clean design, lightning performance, and brands that look razor-sharp online.</p>
                 <div class="ab-hero-actions">
-                    <a class="ab-btn-primary" href="oferta.html#contact">Start a project</a>
-                    <span class="ab-reply-note">↗ We reply within 24h</span>
+                    <a class="ab-btn-primary" href="oferta.html#contact" data-i18n="ab-btn-start">Start a project</a>
+                    <span class="ab-reply-note" data-i18n="ab-reply-note">↗ We reply within 24h</span>
                 </div>
             </div>
             <div class="ab-hero-stats">
                 <div class="ab-stat-card">
                     <span class="ab-stat-icon">🚀</span>
                     <span class="ab-stat-value">50+</span>
-                    <span class="ab-stat-label">Projects Delivered</span>
+                    <span class="ab-stat-label" data-i18n="ab-stat-projects">Projects Delivered</span>
                 </div>
                 <div class="ab-stat-card">
                     <span class="ab-stat-icon">⚡</span>
                     <span class="ab-stat-value">&lt;2s</span>
-                    <span class="ab-stat-label">Avg Load Time</span>
+                    <span class="ab-stat-label" data-i18n="ab-stat-load">Avg Load Time</span>
                 </div>
                 <div class="ab-stat-card">
                     <span class="ab-stat-icon">🎯</span>
                     <span class="ab-stat-value">100%</span>
-                    <span class="ab-stat-label">Client Satisfaction</span>
+                    <span class="ab-stat-label" data-i18n="ab-stat-client">Client Satisfaction</span>
                 </div>
             </div>
         </section>
@@ -60,30 +63,30 @@
         <!-- ══ STORY ══ -->
         <section class="ab-story">
             <div class="ab-story-header">
-                <span class="ab-eyebrow">Our Story</span>
-                <h2 class="ab-section-title">From classmates<br>to <span class="ab-gradient-text">creative partners</span></h2>
-                <p class="ab-lead">We started as classmates who wanted to build websites that feel modern and purposeful. Today we combine sharp design sense with solid front-end engineering to deliver polished, high-converting results.</p>
+                <span class="ab-eyebrow" data-i18n="ab-story-eyebrow">Our Story</span>
+                <h2 class="ab-section-title" data-i18n="ab-story-title">From classmates<br>to <span class="ab-gradient-text">creative partners</span></h2>
+                <p class="ab-lead" data-i18n="ab-story-lead">We started as classmates who wanted to build websites that feel modern and purposeful. Today we combine sharp design sense with solid front-end engineering to deliver polished, high-converting results.</p>
             </div>
             <div class="ab-story-grid">
                 <div class="ab-story-card ab-story-card-lg">
                     <div class="ab-card-glow"></div>
                     <span class="ab-card-num">01</span>
-                    <h3>Obsessed With Detail</h3>
-                    <p>Every section is pixel-aligned, every font size is intentional, every layout is tested across devices. We don't ship until it's perfect.</p>
+                    <h3 data-i18n="ab-card1-h">Obsessed With Detail</h3>
+                    <p data-i18n="ab-card1-p">Every section is pixel-aligned, every font size is intentional, every layout is tested across devices. We don't ship until it's perfect.</p>
                     <div class="ab-card-line"></div>
                 </div>
                 <div class="ab-story-card">
                     <div class="ab-card-glow"></div>
                     <span class="ab-card-num">02</span>
-                    <h3>Built for Speed</h3>
-                    <p>We keep pages light and blazing fast. Your website loads in milliseconds — not seconds.</p>
+                    <h3 data-i18n="ab-card2-h">Built for Speed</h3>
+                    <p data-i18n="ab-card2-p">We keep pages light and blazing fast. Your website loads in milliseconds — not seconds.</p>
                     <div class="ab-card-line"></div>
                 </div>
                 <div class="ab-story-card">
                     <div class="ab-card-glow"></div>
                     <span class="ab-card-num">03</span>
-                    <h3>Always Learning</h3>
-                    <p>New tools, new trends, new techniques. We evolve constantly to stay ahead of the curve.</p>
+                    <h3 data-i18n="ab-card3-h">Always Learning</h3>
+                    <p data-i18n="ab-card3-p">New tools, new trends, new techniques. We evolve constantly to stay ahead of the curve.</p>
                     <div class="ab-card-line"></div>
                 </div>
             </div>
@@ -92,29 +95,29 @@
         <!-- ══ VALUES ══ -->
         <section class="ab-values">
             <div class="ab-values-header">
-                <span class="ab-eyebrow">What We Stand For</span>
-                <h2 class="ab-section-title">Our core <span class="ab-gradient-text">values</span></h2>
+                <span class="ab-eyebrow" data-i18n="ab-values-eyebrow">What We Stand For</span>
+                <h2 class="ab-section-title" data-i18n="ab-values-title">Our core <span class="ab-gradient-text">values</span></h2>
             </div>
             <div class="ab-values-grid">
                 <article class="ab-value-item">
                     <div class="ab-value-icon-wrap"><span>💎</span></div>
-                    <h3>Clarity</h3>
-                    <p>Simple, strong messaging. No noise, no clutter — just what your audience needs to see.</p>
+                    <h3 data-i18n="ab-val1-h">Clarity</h3>
+                    <p data-i18n="ab-val1-p">Simple, strong messaging. No noise, no clutter — just what your audience needs to see.</p>
                 </article>
                 <article class="ab-value-item">
                     <div class="ab-value-icon-wrap"><span>✨</span></div>
-                    <h3>Craft</h3>
-                    <p>We refine every pixel until the UI feels premium. Typography, spacing, color — all dialed in.</p>
+                    <h3 data-i18n="ab-val2-h">Craft</h3>
+                    <p data-i18n="ab-val2-p">We refine every pixel until the UI feels premium. Typography, spacing, color — all dialed in.</p>
                 </article>
                 <article class="ab-value-item">
                     <div class="ab-value-icon-wrap"><span>📱</span></div>
-                    <h3>Responsiveness</h3>
-                    <p>Every page works flawlessly on every device. Desktop, tablet, mobile — pixel-perfect.</p>
+                    <h3 data-i18n="ab-val3-h">Responsiveness</h3>
+                    <p data-i18n="ab-val3-p">Every page works flawlessly on every device. Desktop, tablet, mobile — pixel-perfect.</p>
                 </article>
                 <article class="ab-value-item">
                     <div class="ab-value-icon-wrap"><span>🤝</span></div>
-                    <h3>Reliability</h3>
-                    <p>Clear deadlines, consistent updates, and honest communication throughout every project.</p>
+                    <h3 data-i18n="ab-val4-h">Reliability</h3>
+                    <p data-i18n="ab-val4-p">Clear deadlines, consistent updates, and honest communication throughout every project.</p>
                 </article>
             </div>
         </section>
@@ -122,8 +125,8 @@
         <!-- ══ TECH STACK ══ -->
         <section class="ab-tech">
             <div class="ab-tech-header">
-                <span class="ab-eyebrow">Our Arsenal</span>
-                <h2 class="ab-section-title">Technologies we <span class="ab-gradient-text">master</span></h2>
+                <span class="ab-eyebrow" data-i18n="ab-tech-eyebrow">Our Arsenal</span>
+                <h2 class="ab-section-title" data-i18n="ab-tech-title">Technologies we <span class="ab-gradient-text">master</span></h2>
             </div>
             <div class="ab-tech-marquee">
                 <div class="ab-marquee-track">
@@ -151,10 +154,10 @@
         <section class="ab-cta">
             <div class="ab-cta-glow"></div>
             <div class="ab-cta-content">
-                <h2>Ready to build<br>something <span class="ab-gradient-text">extraordinary</span>?</h2>
-                <p>Tell us your idea. We'll turn it into a website that works as good as it looks.</p>
+                <h2 data-i18n="ab-cta-h">Ready to build<br>something <span class="ab-gradient-text">extraordinary</span>?</h2>
+                <p data-i18n="ab-cta-p">Tell us your idea. We'll turn it into a website that works as good as it looks.</p>
                 <div class="ab-hero-actions">
-                    <a class="ab-btn-primary" href="oferta.html#contact">Start a project</a>
+                    <a class="ab-btn-primary" href="oferta.html#contact" data-i18n="ab-btn-start">Start a project</a>
                     <span class="ab-reply-note">hello@hyperweb.dev</span>
                 </div>
             </div>
@@ -164,14 +167,31 @@
         <div class="footer-inner">
             <div class="footer-brand">HyperWeb</div>
             <div class="footer-links">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="services.html">Services</a>
-                <a href="oferta.html">Oferta</a>
-                <a href="portfolio.html">Portfolio</a>
+                <a href="index.html" data-i18n="footer-home">Home</a>
+                <a href="about.html" data-i18n="footer-about">About</a>
+                <a href="services.html" data-i18n="footer-services">Services</a>
+                <a href="oferta.html" data-i18n="footer-oferta">Oferta</a>
+                <a href="portfolio.html" data-i18n="footer-portfolio">Portfolio</a>
             </div>
-            <div class="footer-meta">© 2026 HyperWeb. All rights reserved.</div>
+            <div class="footer-meta" data-i18n="footer-copy">© 2026 HyperWeb. All rights reserved.</div>
         </div>
     </footer>
+    <script>
+        // Hamburger menu
+        const hamburger = document.getElementById('hamburger');
+        const mainNav = document.getElementById('mainNav');
+        hamburger.addEventListener('click', () => {
+            const isOpen = mainNav.classList.toggle('nav-open');
+            hamburger.classList.toggle('active');
+            hamburger.setAttribute('aria-expanded', isOpen);
+        });
+        mainNav.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mainNav.classList.remove('nav-open');
+                hamburger.classList.remove('active');
+                hamburger.setAttribute('aria-expanded', 'false');
+            });
+        });
+    </script>
 </body>
 </html>
