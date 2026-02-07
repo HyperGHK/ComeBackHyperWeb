@@ -22,143 +22,247 @@
         </nav>
     </header>
     <main>
-        <section class="page-hero">
-            <div class="page-hero-text">
-                <span class="hero-eyebrow">Our Services</span>
-                <h1 class="about-title">Websites built to look premium, load fast, and convert.</h1>
-                <p class="section-lead">We design and build modern pages for businesses, creators, and startups that want a strong online presence.</p>
-                <a class="hero-cta" href="#service-list">Explore services</a>
+        <!-- ═══ HERO ═══ -->
+        <section class="sv-hero">
+            <div class="sv-hero-orbs">
+                <div class="sv-orb sv-orb-1"></div>
+                <div class="sv-orb sv-orb-2"></div>
+                <div class="sv-orb sv-orb-3"></div>
             </div>
-            <div class="page-hero-card">
-                <div class="about-hero-stat">
-                    <span class="stat-num">Fast</span>
-                    <span class="stat-label">Delivery</span>
-                </div>
-                <div class="about-hero-stat">
-                    <span class="stat-num">Clean</span>
-                    <span class="stat-label">UI</span>
-                </div>
-                <div class="about-hero-stat">
-                    <span class="stat-num">Responsive</span>
-                    <span class="stat-label">Layout</span>
-                </div>
+            <div class="sv-hero-particles">
+                <span class="sv-particle" style="--x:15%;--y:20%;--d:6s;--del:0s"></span>
+                <span class="sv-particle" style="--x:80%;--y:30%;--d:8s;--del:1s"></span>
+                <span class="sv-particle" style="--x:45%;--y:70%;--d:7s;--del:2s"></span>
+                <span class="sv-particle" style="--x:70%;--y:60%;--d:9s;--del:0.5s"></span>
+                <span class="sv-particle" style="--x:25%;--y:80%;--d:5s;--del:3s"></span>
             </div>
-        </section>
-
-        <section class="services-grid" id="service-list">
-            <article class="service-card ix-tilt-card">
-                <div class="ix-card-shine"></div>
-                <span class="service-icon">🎯</span>
-                <h3>Landing Pages</h3>
-                <p>High-converting pages focused on a single goal, built for speed and clarity.</p>
-                <ul class="service-features">
-                    <li>Optimized for conversions</li>
-                    <li>Mobile responsive design</li>
-                    <li>SEO-friendly structure</li>
-                    <li>Fast load times</li>
-                </ul>
-            </article>
-            <article class="service-card ix-tilt-card">
-                <div class="ix-card-shine"></div>
-                <span class="service-icon">🏢</span>
-                <h3>Business Websites</h3>
-                <p>Multi-section websites that explain your offer and build credibility.</p>
-                <ul class="service-features">
-                    <li>Professional branding</li>
-                    <li>Service/product pages</li>
-                    <li>Contact & inquiry forms</li>
-                    <li>Blog integration</li>
-                </ul>
-            </article>
-            <article class="service-card ix-tilt-card">
-                <div class="ix-card-shine"></div>
-                <span class="service-icon">🎨</span>
-                <h3>Portfolio Sites</h3>
-                <p>Minimal, bold layouts that make your work the main character.</p>
-                <ul class="service-features">
-                    <li>Image galleries</li>
-                    <li>Project showcases</li>
-                    <li>Custom animations</li>
-                    <li>Dark/light themes</li>
-                </ul>
-            </article>
-            <article class="service-card ix-tilt-card">
-                <div class="ix-card-shine"></div>
-                <span class="service-icon">✨</span>
-                <h3>Redesign & Upgrade</h3>
-                <p>We refresh outdated sites with a clean, modern interface.</p>
-                <ul class="service-features">
-                    <li>Complete redesign</li>
-                    <li>Performance optimization</li>
-                    <li>Modern technologies</li>
-                    <li>Gradual migration</li>
-                </ul>
-            </article>
-        </section>
-
-        <section class="service-details">
-            <h2 class="section-title">What makes us different?</h2>
-            <div class="details-grid">
-                <div class="detail-item">
-                    <h3>⚡ Performance First</h3>
-                    <p>Every website is optimized for speed. We focus on fast load times and smooth interactions that keep visitors engaged.</p>
+            <div class="sv-hero-content">
+                <span class="sv-eyebrow sv-anim-up" style="--delay:0.1s">Our Services</span>
+                <h1 class="sv-hero-title sv-anim-up" style="--delay:0.25s">
+                    Websites built to look<br>
+                    <span class="sv-gradient-text">premium</span>, load fast,<br>
+                    and <span class="sv-gradient-text">convert</span>.
+                </h1>
+                <p class="sv-hero-sub sv-anim-up" style="--delay:0.4s">We design and build modern pages for businesses, creators, and startups that want a strong online presence.</p>
+                <a class="sv-hero-btn sv-anim-up" href="#service-list" style="--delay:0.55s">
+                    Explore services
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 3v10M3 8l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+            </div>
+            <div class="sv-hero-stats sv-anim-up" style="--delay:0.7s">
+                <div class="sv-stat">
+                    <span class="sv-stat-num">Fast</span>
+                    <span class="sv-stat-label">Delivery</span>
                 </div>
-                <div class="detail-item">
-                    <h3>📱 Mobile Ready</h3>
-                    <p>Responsive design that works flawlessly on all devices - desktop, tablet, and mobile phones.</p>
+                <div class="sv-stat-divider"></div>
+                <div class="sv-stat">
+                    <span class="sv-stat-num">Clean</span>
+                    <span class="sv-stat-label">UI Design</span>
                 </div>
-                <div class="detail-item">
-                    <h3>🎯 Results Driven</h3>
-                    <p>We build websites that convert. Every element is designed with your goals in mind.</p>
+                <div class="sv-stat-divider"></div>
+                <div class="sv-stat">
+                    <span class="sv-stat-num">100%</span>
+                    <span class="sv-stat-label">Responsive</span>
                 </div>
-                <div class="detail-item">
-                    <h3>🔧 Easy to Maintain</h3>
-                    <p>Clean, well-documented code that's easy to update and maintain as your business grows.</p>
-                </div>
-                <div class="detail-item">
-                    <h3>🔒 Secure & Safe</h3>
-                    <p>Built with security best practices. HTTPS, data protection, and regular updates included.</p>
-                </div>
-                <div class="detail-item">
-                    <h3>💬 Full Support</h3>
-                    <p>We're here to help. Get dedicated support and training on managing your website.</p>
+                <div class="sv-stat-divider"></div>
+                <div class="sv-stat">
+                    <span class="sv-stat-num">24h</span>
+                    <span class="sv-stat-label">Reply Time</span>
                 </div>
             </div>
         </section>
 
-        <section class="process-section">
-            <h2 class="section-title">Our Process</h2>
-            <div class="process-steps">
-                <div class="step">
-                    <div class="step-number">01</div>
-                    <h3>Discovery & Planning</h3>
-                    <p>We understand your goals, target audience, and requirements through detailed consultation.</p>
+        <!-- ═══ SERVICES GRID ═══ -->
+        <section class="sv-services" id="service-list">
+            <div class="sv-section-header sv-reveal">
+                <span class="sv-eyebrow">What We Build</span>
+                <h2 class="sv-section-title">Our <span class="sv-gradient-text">Services</span></h2>
+            </div>
+            <div class="sv-grid">
+                <article class="sv-card sv-reveal" style="--card-delay:0s">
+                    <div class="sv-card-shine"></div>
+                    <div class="sv-card-glow"></div>
+                    <div class="sv-card-icon">
+                        <span>🎯</span>
+                    </div>
+                    <h3>Landing Pages</h3>
+                    <p>High-converting pages focused on a single goal, built for speed and clarity.</p>
+                    <ul class="sv-features">
+                        <li>Optimized for conversions</li>
+                        <li>Mobile responsive design</li>
+                        <li>SEO-friendly structure</li>
+                        <li>Fast load times</li>
+                    </ul>
+                </article>
+                <article class="sv-card sv-reveal" style="--card-delay:0.1s">
+                    <div class="sv-card-shine"></div>
+                    <div class="sv-card-glow"></div>
+                    <div class="sv-card-icon">
+                        <span>🏢</span>
+                    </div>
+                    <h3>Business Websites</h3>
+                    <p>Multi-section websites that explain your offer and build credibility.</p>
+                    <ul class="sv-features">
+                        <li>Professional branding</li>
+                        <li>Service/product pages</li>
+                        <li>Contact & inquiry forms</li>
+                        <li>Blog integration</li>
+                    </ul>
+                </article>
+                <article class="sv-card sv-reveal" style="--card-delay:0.2s">
+                    <div class="sv-card-shine"></div>
+                    <div class="sv-card-glow"></div>
+                    <div class="sv-card-icon">
+                        <span>🎨</span>
+                    </div>
+                    <h3>Portfolio Sites</h3>
+                    <p>Minimal, bold layouts that make your work the main character.</p>
+                    <ul class="sv-features">
+                        <li>Image galleries</li>
+                        <li>Project showcases</li>
+                        <li>Custom animations</li>
+                        <li>Dark/light themes</li>
+                    </ul>
+                </article>
+                <article class="sv-card sv-reveal" style="--card-delay:0.3s">
+                    <div class="sv-card-shine"></div>
+                    <div class="sv-card-glow"></div>
+                    <div class="sv-card-icon">
+                        <span>✨</span>
+                    </div>
+                    <h3>Redesign & Upgrade</h3>
+                    <p>We refresh outdated sites with a clean, modern interface.</p>
+                    <ul class="sv-features">
+                        <li>Complete redesign</li>
+                        <li>Performance optimization</li>
+                        <li>Modern technologies</li>
+                        <li>Gradual migration</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <!-- ═══ WHY US — BENTO GRID ═══ -->
+        <section class="sv-why">
+            <div class="sv-section-header sv-reveal">
+                <span class="sv-eyebrow">Our Edge</span>
+                <h2 class="sv-section-title">What makes us <span class="sv-gradient-text">different</span>?</h2>
+            </div>
+            <div class="sv-bento">
+                <div class="sv-bento-item sv-bento-wide sv-reveal" style="--card-delay:0s">
+                    <div class="sv-card-shine"></div>
+                    <div class="sv-bento-icon">⚡</div>
+                    <div class="sv-bento-text">
+                        <h3>Performance First</h3>
+                        <p>Every website is optimized for speed. We focus on fast load times and smooth interactions that keep visitors engaged.</p>
+                    </div>
                 </div>
-                <div class="step">
-                    <div class="step-number">02</div>
-                    <h3>Design & Prototype</h3>
-                    <p>We create beautiful designs and prototypes for your approval before development.</p>
+                <div class="sv-bento-item sv-reveal" style="--card-delay:0.1s">
+                    <div class="sv-card-shine"></div>
+                    <div class="sv-bento-icon">📱</div>
+                    <div class="sv-bento-text">
+                        <h3>Mobile Ready</h3>
+                        <p>Responsive design that works flawlessly on all devices — desktop, tablet, and mobile.</p>
+                    </div>
                 </div>
-                <div class="step">
-                    <div class="step-number">03</div>
-                    <h3>Development</h3>
-                    <p>Our developers build your site using modern technologies, tested across all devices.</p>
+                <div class="sv-bento-item sv-reveal" style="--card-delay:0.15s">
+                    <div class="sv-card-shine"></div>
+                    <div class="sv-bento-icon">🎯</div>
+                    <div class="sv-bento-text">
+                        <h3>Results Driven</h3>
+                        <p>We build websites that convert. Every element is designed with your goals in mind.</p>
+                    </div>
                 </div>
-                <div class="step">
-                    <div class="step-number">04</div>
-                    <h3>Launch & Support</h3>
-                    <p>We deploy your website and provide ongoing support to keep it running smoothly.</p>
+                <div class="sv-bento-item sv-reveal" style="--card-delay:0.2s">
+                    <div class="sv-card-shine"></div>
+                    <div class="sv-bento-icon">🔧</div>
+                    <div class="sv-bento-text">
+                        <h3>Easy to Maintain</h3>
+                        <p>Clean, well-documented code that's easy to update as your business grows.</p>
+                    </div>
+                </div>
+                <div class="sv-bento-item sv-reveal" style="--card-delay:0.25s">
+                    <div class="sv-card-shine"></div>
+                    <div class="sv-bento-icon">💬</div>
+                    <div class="sv-bento-text">
+                        <h3>Full Support</h3>
+                        <p>We're here to help. Get dedicated support and training on managing your website.</p>
+                    </div>
+                </div>
+                <div class="sv-bento-item sv-bento-wide sv-reveal" style="--card-delay:0.3s">
+                    <div class="sv-card-shine"></div>
+                    <div class="sv-bento-icon">🔒</div>
+                    <div class="sv-bento-text">
+                        <h3>Secure & Supported</h3>
+                        <p>Built with security best practices. HTTPS, data protection, dedicated support, and regular updates — all included.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="s-contact" id="contact">
-            <div class="contact-content">
-                <h2 class="section-title">Ready to start?</h2>
-                <p class="section-lead">Send us your idea and we’ll respond with a quick plan.</p>
-                <div class="contact-cta">
-                    <a class="hero-cta" href="oferta.html#contact">Start a project</a>
-                    <span class="contact-note">hello@hyperweb.dev</span>
+        <!-- ═══ PROCESS TIMELINE ═══ -->
+        <section class="sv-process">
+            <div class="sv-section-header sv-reveal">
+                <span class="sv-eyebrow">Step by Step</span>
+                <h2 class="sv-section-title">Our <span class="sv-gradient-text">Process</span></h2>
+            </div>
+            <div class="sv-timeline">
+                <div class="sv-timeline-line"></div>
+                <div class="sv-timeline-step sv-reveal" style="--card-delay:0s">
+                    <div class="sv-step-dot">
+                        <span class="sv-dot-ping"></span>
+                    </div>
+                    <div class="sv-step-content">
+                        <div class="sv-step-num">01</div>
+                        <h3>Discovery & Planning</h3>
+                        <p>We understand your goals, target audience, and requirements through detailed consultation.</p>
+                    </div>
+                </div>
+                <div class="sv-timeline-step sv-reveal" style="--card-delay:0.15s">
+                    <div class="sv-step-dot">
+                        <span class="sv-dot-ping"></span>
+                    </div>
+                    <div class="sv-step-content">
+                        <div class="sv-step-num">02</div>
+                        <h3>Design & Prototype</h3>
+                        <p>We create beautiful designs and prototypes for your approval before development.</p>
+                    </div>
+                </div>
+                <div class="sv-timeline-step sv-reveal" style="--card-delay:0.3s">
+                    <div class="sv-step-dot">
+                        <span class="sv-dot-ping"></span>
+                    </div>
+                    <div class="sv-step-content">
+                        <div class="sv-step-num">03</div>
+                        <h3>Development</h3>
+                        <p>Our developers build your site using modern technologies, tested across all devices.</p>
+                    </div>
+                </div>
+                <div class="sv-timeline-step sv-reveal" style="--card-delay:0.45s">
+                    <div class="sv-step-dot">
+                        <span class="sv-dot-ping"></span>
+                    </div>
+                    <div class="sv-step-content">
+                        <div class="sv-step-num">04</div>
+                        <h3>Launch & Support</h3>
+                        <p>We deploy your website and provide ongoing support to keep it running smoothly.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══ CTA ═══ -->
+        <section class="sv-cta">
+            <div class="sv-cta-orbs">
+                <div class="sv-orb sv-orb-1"></div>
+                <div class="sv-orb sv-orb-2"></div>
+            </div>
+            <div class="sv-cta-content sv-reveal">
+                <h2>Ready to build<br>something <span class="sv-gradient-text">great</span>?</h2>
+                <p>Send us your idea and we'll respond with a quick plan.</p>
+                <div class="sv-cta-actions">
+                    <a class="sv-btn-primary" href="oferta.html#contact">Start a project</a>
+                    <span class="sv-cta-note">hello@hyperweb.dev</span>
                 </div>
             </div>
         </section>
@@ -173,16 +277,48 @@
                 <a href="oferta.html">Oferta</a>
                 <a href="portfolio.html">Portfolio</a>
             </div>
-            <div class="footer-meta">© 2026 HyperWeb. All rights reserved.</div>
+            <div class="footer-meta">&copy; 2026 HyperWeb. All rights reserved.</div>
         </div>
     </footer>
     <script>
-        const observer = new IntersectionObserver((entries) => {
+        /* ── Scroll reveal ── */
+        const revealObs = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
-                if (entry.isIntersecting) entry.target.classList.add('ix-visible');
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('sv-visible');
+                    revealObs.unobserve(entry.target);
+                }
             });
-        }, { threshold: 0.15 });
-        document.querySelectorAll('.ix-tilt-card, .service-card, .detail-item, .step').forEach(el => observer.observe(el));
+        }, { threshold: 0.12 });
+        document.querySelectorAll('.sv-reveal').forEach(el => revealObs.observe(el));
+
+        /* ── Parallax orbs on hero mouse move ── */
+        const hero = document.querySelector('.sv-hero');
+        if (hero) {
+            hero.addEventListener('mousemove', (e) => {
+                const rect = hero.getBoundingClientRect();
+                const x = (e.clientX - rect.left) / rect.width - 0.5;
+                const y = (e.clientY - rect.top) / rect.height - 0.5;
+                hero.querySelectorAll('.sv-orb').forEach((orb, i) => {
+                    const speed = (i + 1) * 18;
+                    orb.style.transform = `translate(${x * speed}px, ${y * speed}px)`;
+                });
+            });
+        }
+
+        /* ── Timeline line animation on scroll ── */
+        const timeline = document.querySelector('.sv-timeline-line');
+        if (timeline) {
+            const timelineSection = document.querySelector('.sv-timeline');
+            const lineObs = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        timeline.classList.add('sv-line-active');
+                    }
+                });
+            }, { threshold: 0.2 });
+            lineObs.observe(timelineSection);
+        }
     </script>
 </body>
 </html>
