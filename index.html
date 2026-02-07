@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="top-banner">
+        <svg class="copilot-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z" fill="currentColor" opacity=".3"/><path d="M9.5 8.5C9.5 7.67 10.17 7 11 7h2c.83 0 1.5.67 1.5 1.5v1c0 .83-.67 1.5-1.5 1.5h-2c-.83 0-1.5-.67-1.5-1.5v-1z" fill="currentColor"/><path d="M7 13.5C7 12.67 7.67 12 8.5 12h7c.83 0 1.5.67 1.5 1.5v2c0 .83-.67 1.5-1.5 1.5h-7c-.83 0-1.5-.67-1.5-1.5v-2z" fill="currentColor"/><circle cx="9.5" cy="14.5" r="1" fill="var(--bg-top)"/><circle cx="14.5" cy="14.5" r="1" fill="var(--bg-top)"/></svg>
+        <span>Built with <strong>GitHub Copilot</strong> — our main AI development tool</span>
+    </div>
     <header>
         <p>LOGO</p>
 
@@ -20,95 +24,245 @@
     </header>
     <main>
         <section class="Hero">
+            <!-- Animated background orbs -->
+            <div class="hero-orbs">
+                <div class="h-orb h-orb-1"></div>
+                <div class="h-orb h-orb-2"></div>
+                <div class="h-orb h-orb-3"></div>
+            </div>
+            <!-- Floating particles -->
+            <div class="hero-particles">
+                <span class="particle p1"></span>
+                <span class="particle p2"></span>
+                <span class="particle p3"></span>
+                <span class="particle p4"></span>
+                <span class="particle p5"></span>
+                <span class="particle p6"></span>
+                <span class="particle p7"></span>
+                <span class="particle p8"></span>
+            </div>
             <img src="221.png" alt="zdjecie">
             <p class="hero-text">
                 <span class="hero-eyebrow">Creative Web Agency</span>
                 <span class="hero-line hero-line-1">Build a</span>
-                <span class="hero-line hero-line-2">Tech‑Ready Website</span>
+                <span class="hero-line hero-line-2">Tech&#8209;Ready Website</span>
                 <span class="hero-sub">We design fast, clean, and scalable sites that make your brand look sharp.</span>
-                <span class="hero-sub">From landing pages to full business websites — we focus on clarity, speed, and results.</span>
-                <a class="hero-cta" href="#">Start your project with us</a>
+                <span class="hero-sub">From landing pages to full business websites &#8212; we focus on clarity, speed, and results.</span>
+                <a class="hero-cta" href="oferta.html#contact">Start your project with us</a>
             </p>
+            <!-- Animated scroll indicator -->
+            <div class="scroll-indicator">
+                <div class="scroll-mouse">
+                    <div class="scroll-wheel"></div>
+                </div>
+                <span>Scroll</span>
+            </div>
         </section>
+
+        <!-- Animated counter banner -->
+        <section class="ix-counter-bar">
+            <div class="ix-counter">
+                <span class="ix-counter-num">50+</span>
+                <span class="ix-counter-label">Projects</span>
+            </div>
+            <div class="ix-counter-divider"></div>
+            <div class="ix-counter">
+                <span class="ix-counter-num">&lt;2s</span>
+                <span class="ix-counter-label">Load Time</span>
+            </div>
+            <div class="ix-counter-divider"></div>
+            <div class="ix-counter">
+                <span class="ix-counter-num">100%</span>
+                <span class="ix-counter-label">Satisfaction</span>
+            </div>
+            <div class="ix-counter-divider"></div>
+            <div class="ix-counter">
+                <span class="ix-counter-num">4</span>
+                <span class="ix-counter-label">Experts</span>
+            </div>
+        </section>
+
         <section class="s-about">
-            <h2 class="section-title">About Us</h2>
-            <section class="bento-card">
-                <div class="card card1">Tworzymy nowoczesne strony, które wyglądają profesjonalnie, działają szybko i sprzedają.</div>
-                <div class="card card2">Jesteśmy uczniami MTI i codziennie rozwijamy się w technologii front‑end i designie.</div>
-                <div class="card card3">Programowanie to nasza pasja — każdą sekcję dopracowujemy w detalach.</div>
-                <div class="card card4">
-                    <span>Cel? Najlepsze strony internetowe: czytelne, estetyczne i skuteczne dla marki.</span>
-                    <a class="card-cta" href="#contact">Napisz do nas</a>
+            <h2 class="section-title ix-reveal">Why We're Different</h2>
+            <p class="section-lead ix-reveal" style="text-align: center; margin-bottom: 40px;">We don't just build websites &#8212; we craft digital experiences that turn visitors into loyal customers</p>
+            <section class="bento">
+                <div class="bento-item bento-hero">
+                    <div class="bento-glow"></div>
+                    <div class="bento-inner">
+                        <span class="bento-tag">Core</span>
+                        <h3>Lightning<br><span class="bento-accent">Speed</span></h3>
+                        <p>Every website we build loads in milliseconds. Optimized, compressed, and blazing fast.</p>
+                        <div class="bento-badge">&#9889; Sub-2s load time</div>
+                    </div>
+                </div>
+                <div class="bento-item bento-sm bento-design">
+                    <div class="bento-glow"></div>
+                    <div class="bento-inner">
+                        <span class="bento-emoji">&#127912;</span>
+                        <h3>Premium<br>Design</h3>
+                        <p>Bold, modern layouts that make your brand unforgettable.</p>
+                    </div>
+                </div>
+                <div class="bento-item bento-sm bento-responsive">
+                    <div class="bento-glow"></div>
+                    <div class="bento-inner">
+                        <span class="bento-emoji">&#128241;</span>
+                        <h3>Fully<br>Responsive</h3>
+                        <p>Desktop, tablet, mobile &#8212; pixel-perfect everywhere.</p>
+                    </div>
+                </div>
+                <div class="bento-item bento-wide bento-conversion">
+                    <div class="bento-glow"></div>
+                    <div class="bento-inner">
+                        <span class="bento-emoji">&#128202;</span>
+                        <div>
+                            <h3>Conversion Focused</h3>
+                            <p>Every element designed to convert visitors into customers.</p>
+                        </div>
+                        <div class="bento-pills">
+                            <span class="pill">CTA Tested</span>
+                            <span class="pill">SEO Ready</span>
+                            <span class="pill">Analytics</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bento-item bento-sm bento-code">
+                    <div class="bento-glow"></div>
+                    <div class="bento-inner">
+                        <span class="bento-emoji">&#11088;</span>
+                        <h3>Scalable<br>Code</h3>
+                        <p>Clean architecture. Zero tech debt.</p>
+                    </div>
+                </div>
+                <div class="bento-item bento-sm bento-team">
+                    <div class="bento-glow"></div>
+                    <div class="bento-inner">
+                        <span class="bento-emoji">&#128188;</span>
+                        <h3>Expert<br>Team</h3>
+                        <p>MTI students pushing web boundaries.</p>
+                    </div>
+                </div>
+                <div class="bento-item bento-cta-card">
+                    <div class="bento-glow"></div>
+                    <div class="bento-inner">
+                        <span class="bento-emoji">&#127919;</span>
+                        <div>
+                            <h3>Ready to build something great?</h3>
+                            <p>We don't just launch sites &#8212; we build growth engines.</p>
+                        </div>
+                        <a class="bento-btn" href="oferta.html#contact">Start Your Project &#8594;</a>
+                    </div>
                 </div>
             </section>
         </section>
+
         <section class="s-why-us">
             <div class="why-intro">
-                <h2 class="section-title">Why Choose Us</h2>
+                <h2 class="section-title ix-reveal">Why Choose Us</h2>
                 <p class="section-lead">We are a focused student team from MTI that treats every project like a showcase. We build clean, fast, and modern websites with a tech-first mindset.</p>
                 <div class="why-stats">
-                    <div class="stat">
+                    <div class="stat ix-stat-glow">
                         <span class="stat-num">Fast</span>
                         <span class="stat-label">Delivery</span>
                     </div>
-                    <div class="stat">
+                    <div class="stat ix-stat-glow">
                         <span class="stat-num">Clean</span>
                         <span class="stat-label">Code</span>
                     </div>
-                    <div class="stat">
+                    <div class="stat ix-stat-glow">
                         <span class="stat-num">Modern</span>
                         <span class="stat-label">Design</span>
                     </div>
-                    <div class="stat">
+                    <div class="stat ix-stat-glow">
                         <span class="stat-num">Smart</span>
                         <span class="stat-label">Structure</span>
                     </div>
                 </div>
                 <div class="why-underline"></div>
-                <a class="why-cta hero-cta" href="#">See how we work</a>
+                <a class="why-cta hero-cta" href="oferta.html#contact">See how we work</a>
             </div>
             <div class="why-grid">
-                <article class="why-card">
+                <article class="why-card ix-tilt-card">
+                    <div class="ix-card-shine"></div>
                     <h3>Strategy First</h3>
                     <p>We start with your goal and build a structure that supports conversion and clarity.</p>
                 </article>
-                <article class="why-card">
+                <article class="why-card ix-tilt-card">
+                    <div class="ix-card-shine"></div>
                     <h3>Performance</h3>
                     <p>Optimized assets, clean layout, and smooth UX that loads fast on every device.</p>
                 </article>
-                <article class="why-card">
+                <article class="why-card ix-tilt-card">
+                    <div class="ix-card-shine"></div>
                     <h3>Detail Obsession</h3>
                     <p>Spacing, typography, and colors refined until it feels premium and professional.</p>
                 </article>
-                <article class="why-card">
+                <article class="why-card ix-tilt-card">
+                    <div class="ix-card-shine"></div>
                     <h3>Future Ready</h3>
                     <p>Scalable structure so you can grow the website without rebuilding from zero.</p>
                 </article>
             </div>
         </section>
+
+        <!-- Animated tech marquee -->
+        <section class="ix-marquee-section">
+            <div class="ab-tech-marquee">
+                <div class="ab-marquee-track">
+                    <span class="ab-tech-pill">HTML5</span>
+                    <span class="ab-tech-pill">CSS3</span>
+                    <span class="ab-tech-pill">JavaScript</span>
+                    <span class="ab-tech-pill">UI/UX</span>
+                    <span class="ab-tech-pill">Responsive</span>
+                    <span class="ab-tech-pill">Performance</span>
+                    <span class="ab-tech-pill">SEO</span>
+                    <span class="ab-tech-pill">Figma</span>
+                    <span class="ab-tech-pill">Git</span>
+                    <span class="ab-tech-pill">React</span>
+                    <span class="ab-tech-pill">HTML5</span>
+                    <span class="ab-tech-pill">CSS3</span>
+                    <span class="ab-tech-pill">JavaScript</span>
+                    <span class="ab-tech-pill">UI/UX</span>
+                    <span class="ab-tech-pill">Responsive</span>
+                    <span class="ab-tech-pill">Performance</span>
+                    <span class="ab-tech-pill">SEO</span>
+                    <span class="ab-tech-pill">Figma</span>
+                    <span class="ab-tech-pill">Git</span>
+                    <span class="ab-tech-pill">React</span>
+                </div>
+            </div>
+        </section>
+
         <section class="s-contact" id="contact">
+            <div class="ix-contact-orbs">
+                <div class="ix-c-orb ix-c-orb-1"></div>
+                <div class="ix-c-orb ix-c-orb-2"></div>
+            </div>
             <div class="contact-content">
-                <h2 class="section-title">Let’s Build Your Website</h2>
-                <p class="section-lead">Tell us what you need and we’ll respond fast with a clean plan and clear timeline.</p>
+                <h2 class="section-title ix-reveal">Let's Build Your Website</h2>
+                <p class="section-lead">Tell us what you need and we'll respond fast with a clean plan and clear timeline.</p>
                 <div class="process">
-                    <div class="process-step">
+                    <div class="process-step ix-tilt-card">
+                        <div class="ix-card-shine"></div>
                         <span class="step-num">01</span>
                         <span class="step-title">Brief</span>
                         <span class="step-text">We collect goals, style, and content.</span>
                     </div>
-                    <div class="process-step">
+                    <div class="process-step ix-tilt-card">
+                        <div class="ix-card-shine"></div>
                         <span class="step-num">02</span>
                         <span class="step-title">Design</span>
                         <span class="step-text">We craft layout, colors, and UI.</span>
                     </div>
-                    <div class="process-step">
+                    <div class="process-step ix-tilt-card">
+                        <div class="ix-card-shine"></div>
                         <span class="step-num">03</span>
                         <span class="step-title">Launch</span>
                         <span class="step-text">We deliver a fast, polished site.</span>
                     </div>
                 </div>
                 <div class="contact-cta">
-                    <a class="hero-cta" href="#">Start a project</a>
+                    <a class="hero-cta ix-pulse-btn" href="oferta.html#contact">Start a project</a>
                     <span class="contact-note">Or DM us: hello@hyperweb.dev</span>
                 </div>
             </div>
@@ -124,8 +278,35 @@
                 <a href="oferta.html">Oferta</a>
                 <a href="portfolio.html">Portfolio</a>
             </div>
-            <div class="footer-meta">© 2026 HyperWeb. All rights reserved.</div>
+            <div class="footer-meta">&copy; 2026 HyperWeb. All rights reserved.</div>
         </div>
     </footer>
+
+    <script>
+        // Intersection Observer for scroll-triggered animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('ix-visible');
+                }
+            });
+        }, { threshold: 0.15, rootMargin: '0px 0px -50px 0px' });
+
+        document.querySelectorAll('.ix-reveal, .ix-tilt-card, .why-card, .process-step, .stat, .bento-item').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Parallax on mouse move for hero orbs
+        document.querySelector('.Hero')?.addEventListener('mousemove', (e) => {
+            const rect = e.currentTarget.getBoundingClientRect();
+            const x = (e.clientX - rect.left) / rect.width - 0.5;
+            const y = (e.clientY - rect.top) / rect.height - 0.5;
+            
+            document.querySelectorAll('.h-orb').forEach((orb, i) => {
+                const speed = (i + 1) * 25;
+                orb.style.transform = `translate(${x * speed}px, ${y * speed}px)`;
+            });
+        });
+    </script>
 </body>
 </html>

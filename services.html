@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="top-banner">
+        <svg class="copilot-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z" fill="currentColor" opacity=".3"/><path d="M9.5 8.5C9.5 7.67 10.17 7 11 7h2c.83 0 1.5.67 1.5 1.5v1c0 .83-.67 1.5-1.5 1.5h-2c-.83 0-1.5-.67-1.5-1.5v-1z" fill="currentColor"/><path d="M7 13.5C7 12.67 7.67 12 8.5 12h7c.83 0 1.5.67 1.5 1.5v2c0 .83-.67 1.5-1.5 1.5h-7c-.83 0-1.5-.67-1.5-1.5v-2z" fill="currentColor"/><circle cx="9.5" cy="14.5" r="1" fill="var(--bg-top)"/><circle cx="14.5" cy="14.5" r="1" fill="var(--bg-top)"/></svg>
+        <span>Built with <strong>GitHub Copilot</strong> — our main AI development tool</span>
+    </div>
     <header>
         <p>LOGO</p>
         <nav>
@@ -42,22 +46,110 @@
         </section>
 
         <section class="services-grid" id="service-list">
-            <article class="service-card">
+            <article class="service-card ix-tilt-card">
+                <div class="ix-card-shine"></div>
+                <span class="service-icon">🎯</span>
                 <h3>Landing Pages</h3>
                 <p>High-converting pages focused on a single goal, built for speed and clarity.</p>
+                <ul class="service-features">
+                    <li>Optimized for conversions</li>
+                    <li>Mobile responsive design</li>
+                    <li>SEO-friendly structure</li>
+                    <li>Fast load times</li>
+                </ul>
             </article>
-            <article class="service-card">
+            <article class="service-card ix-tilt-card">
+                <div class="ix-card-shine"></div>
+                <span class="service-icon">🏢</span>
                 <h3>Business Websites</h3>
                 <p>Multi-section websites that explain your offer and build credibility.</p>
+                <ul class="service-features">
+                    <li>Professional branding</li>
+                    <li>Service/product pages</li>
+                    <li>Contact & inquiry forms</li>
+                    <li>Blog integration</li>
+                </ul>
             </article>
-            <article class="service-card">
+            <article class="service-card ix-tilt-card">
+                <div class="ix-card-shine"></div>
+                <span class="service-icon">🎨</span>
                 <h3>Portfolio Sites</h3>
                 <p>Minimal, bold layouts that make your work the main character.</p>
+                <ul class="service-features">
+                    <li>Image galleries</li>
+                    <li>Project showcases</li>
+                    <li>Custom animations</li>
+                    <li>Dark/light themes</li>
+                </ul>
             </article>
-            <article class="service-card">
+            <article class="service-card ix-tilt-card">
+                <div class="ix-card-shine"></div>
+                <span class="service-icon">✨</span>
                 <h3>Redesign & Upgrade</h3>
                 <p>We refresh outdated sites with a clean, modern interface.</p>
+                <ul class="service-features">
+                    <li>Complete redesign</li>
+                    <li>Performance optimization</li>
+                    <li>Modern technologies</li>
+                    <li>Gradual migration</li>
+                </ul>
             </article>
+        </section>
+
+        <section class="service-details">
+            <h2 class="section-title">What makes us different?</h2>
+            <div class="details-grid">
+                <div class="detail-item">
+                    <h3>⚡ Performance First</h3>
+                    <p>Every website is optimized for speed. We focus on fast load times and smooth interactions that keep visitors engaged.</p>
+                </div>
+                <div class="detail-item">
+                    <h3>📱 Mobile Ready</h3>
+                    <p>Responsive design that works flawlessly on all devices - desktop, tablet, and mobile phones.</p>
+                </div>
+                <div class="detail-item">
+                    <h3>🎯 Results Driven</h3>
+                    <p>We build websites that convert. Every element is designed with your goals in mind.</p>
+                </div>
+                <div class="detail-item">
+                    <h3>🔧 Easy to Maintain</h3>
+                    <p>Clean, well-documented code that's easy to update and maintain as your business grows.</p>
+                </div>
+                <div class="detail-item">
+                    <h3>🔒 Secure & Safe</h3>
+                    <p>Built with security best practices. HTTPS, data protection, and regular updates included.</p>
+                </div>
+                <div class="detail-item">
+                    <h3>💬 Full Support</h3>
+                    <p>We're here to help. Get dedicated support and training on managing your website.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="process-section">
+            <h2 class="section-title">Our Process</h2>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">01</div>
+                    <h3>Discovery & Planning</h3>
+                    <p>We understand your goals, target audience, and requirements through detailed consultation.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">02</div>
+                    <h3>Design & Prototype</h3>
+                    <p>We create beautiful designs and prototypes for your approval before development.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">03</div>
+                    <h3>Development</h3>
+                    <p>Our developers build your site using modern technologies, tested across all devices.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">04</div>
+                    <h3>Launch & Support</h3>
+                    <p>We deploy your website and provide ongoing support to keep it running smoothly.</p>
+                </div>
+            </div>
         </section>
 
         <section class="s-contact" id="contact">
@@ -65,7 +157,7 @@
                 <h2 class="section-title">Ready to start?</h2>
                 <p class="section-lead">Send us your idea and we’ll respond with a quick plan.</p>
                 <div class="contact-cta">
-                    <a class="hero-cta" href="#">Start a project</a>
+                    <a class="hero-cta" href="oferta.html#contact">Start a project</a>
                     <span class="contact-note">hello@hyperweb.dev</span>
                 </div>
             </div>
@@ -84,5 +176,13 @@
             <div class="footer-meta">© 2026 HyperWeb. All rights reserved.</div>
         </div>
     </footer>
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('ix-visible');
+            });
+        }, { threshold: 0.15 });
+        document.querySelectorAll('.ix-tilt-card, .service-card, .detail-item, .step').forEach(el => observer.observe(el));
+    </script>
 </body>
 </html>
